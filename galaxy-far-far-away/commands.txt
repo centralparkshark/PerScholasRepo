@@ -1,0 +1,43 @@
+Part I:
+1. mkdir death_star
+   cd death_star
+   touch darth_vader.txt princess_leia.txt storm_trooper.txt
+2. touch tatooine/luke.txt tatooine/ben_kenobi.txt
+   (tried alt way of not cd-ing into folder)
+3. cd tatooine
+   mkdir millenium_falcon
+   cd millenium_falcon
+   touch han_solo.txt chewbaca.txt
+   
+Part II:
+4. cd ..
+   mv ben_kenobi.txt obi_wan.txt
+Part III:
+5. cd ../death_star
+   cp storm_trooper.txt ../tatooine
+Part IV:
+(didn't include any cd moves after this point so make sure you are in the right directory)
+6. mv -t millenium_falcon/ luke.txt obi_wan.txt
+7. mv millenium_falcon/ ..
+8. mv millenium_falcon/ death_star/
+9. mv princess_leia.txt millenium_falcon/
+Part V:
+10. rm obi_wan.txt
+Part VI:
+11. mkdir yavin_4
+12. mv millenium_falcon/ ../yavin_4/
+13. mkdir x_wing
+14. mv princess_leia.txt ..
+    mv luke.txt  ../x_wing/
+15. mv -t .. millenium_falcon/ x_wing/
+16. mkdir tie_fighter_{1..3}
+17. mv darth_vader.txt tie_fighter_1
+18. cp storm_trooper.txt tie_fighter_2
+    cp storm_trooper.txt tie_fighter_3
+19. mv -t .. tie_fighter_1 tie_fighter_2 tie_fighter_3
+Part VII:
+20. rm -r tie_fighter_{2,3}
+Part VIII:
+21. touch the_force.txt 
+22. rm -r death_star/
+23. mv -t yavin_4/ millenium_falcon/ x_wing/
