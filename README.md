@@ -1,6 +1,8 @@
 # Concept Expansion
 ## Information and Contacts
-Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom]()
+Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom](https://applications.zoom.us/lti/rich/j/97471920450?oauth_consumer_key=RlNGPeekRPi7WbE9imZ7Yg&x_zm_session_id_token=eyJzdiI6IjAwMDAwMSIsInptX3NrbSI6InptX28ybSIsInR5cCI6IkpXVCIsImFsZyI6IkhTMjU2In0.eyJhdWQiOiJpbnRlZ3JhdGlvbiIsImlzcyI6ImludGVncmF0aW9uIiwiZXhwIjoxNzIxMzI1OTczLCJpYXQiOjE3MjEzMjQxNzMsImp0aSI6IjM5MzFiOTQwLWI1YmQtNDBlMi1hMzA2LThmMjlmNWVjODcxOSJ9.lZVy51UuOV2aWVsmr15v-oOxD7pKdzaqLAD_JV1h-rY&lti_scid=39c5184036f0131dfd104c161cfe76aff273f930c2400069c70d96a2fc705c8d)
+
+[Link to Canvas](https://perscholas.instructure.com/)
 
 ## General Resources
 ### Youtube Channels
@@ -8,8 +10,8 @@ Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom]()
 - [HuXn WebDev](https://www.youtube.com/@huxnwebdev/playlists)
 ### Online Courses
 - [Free Coursera for NY Residents](https://dol.ny.gov/online-learning-coursera)
-- [Udemy Course - Web Development (With Coupon!, costs $16)](https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=THANKSLEARNER24)
-- [Free Udemy w/ Library Card](https://www.gale.com/elearning/udemy) Offered by many libraries, check out their websites to see!
+- [Udemy Course - Web Development](https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=THANKSLEARNER24) - costs $16
+- [Free Udemy w/ Library Card](https://www.gale.com/elearning/udemy) - check your library to see if you have access
 ### Documentation
 - [W3 Schools](https://www.w3schools.com/)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/)
@@ -33,7 +35,7 @@ Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom]()
 - [The Linux Commands Handbook](https://www.freecodecamp.org/news/the-linux-commands-handbook/)
 - [Renaming Files in Terminal](https://youtu.be/4CmWoxKyGhM?si=zul6aNyUTBlMKL-E)
 
-### Git
+## Git
 - [Setting Up Git](https://www.theodinproject.com/lessons/foundations-git-basics)
 - [Git Basics](https://www.theodinproject.com/lessons/foundations-git-basics#new-github-repo)
 - [GitHub for Beginners](https://youtu.be/3RjQznt-8kE?si=77pU2zVFPRM2bZPM)
