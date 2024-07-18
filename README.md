@@ -55,3 +55,6 @@ Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom](https://applica
 
 ## CSS
 - [CSS Diner](https://flukeout.github.io/) Game to Practice CSS Selectors
+- [W3 CSS Exercises](https://www.w3schools.com/CSS/exercise.asp) 138 practice problems!
+- [W3 CSS Quiztest](https://www.w3schools.com/quiztest/quiztest.asp?qtest=CSS)
+- [Quizlet Flashcards](https://quizlet.com/117726945/css-practice-quiz-flash-cards/)
