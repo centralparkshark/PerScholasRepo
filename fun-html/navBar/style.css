@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: large;
+    color: whitesmoke;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: navy;
+}
+
+li {
+    float: left;
+    border-right: 1px solid whitesmoke;
+
+}
+
+div {
+    display: flex;
+    align-items: center;
+}
+
+div>li {
+    border-right: none;
+}
+
+img {
+    height: 24px;
+    filter: invert(100%);
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: red;
+}
+
+.active {
+    background-color: #04AA6D;
+}
