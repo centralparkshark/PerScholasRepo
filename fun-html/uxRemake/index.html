@@ -8,46 +8,52 @@
 </head>
 <body>
     <section class="webTop">
-        <div class="header" id="fullHeader">
-            <div class="header leftMenu">
+        <div class="header">
+            <div class="leftNavBar">
                 <img id="logo" src="./cloudIcon.png" alt="cloud" height="42px">
-                <h3 class="title">meetmind.ai</h3>
+                <div class="title">meetmind.ai</div>
             </div>
-            <div class="header centerMenu">
-                <div class="menu">
+            <div class="centerNavBar">
+                <div class="navBarItem">
                     <div>Product</div>
-                    <img class="dropDown" src="./downArrow.svg" alt="down arrow">
+                    <img src="./downArrow.svg" alt="down arrow">
                 </div>
-                <div class="menu">
+                <div class="navBarItem">
                     <div>Solutions</div>
-                    <img class="dropDown" src="./downArrow.svg" alt="down arrow">
+                    <img class="dropdown" src="./downArrow.svg" alt="down arrow">
                 </div>
-                <div class="menu">
+                <div class="navBarItem">
                     <div>Resources</div>
-                    <img class="dropDown" src="./downArrow.svg" alt="down arrow">
+                    <img class="dropdown" src="./downArrow.svg" alt="down arrow">
                 </div>
-                <div class="menu">
+                <div class="navBarItem">
                     <div>Company</div>
-                    <img class="dropDown" src="./downArrow.svg" alt="down arrow">
+                    <img class="dropdown" src="./downArrow.svg" alt="down arrow">
                 </div>
-                <div class="menu">Pricing</div>
+                <div class="navBarItem">Pricing</div>
             </div>
-            <div class="header rightMenu">
+            <div class="rightNavBar">
                 <div id="login">Login</div>
                 <button id="getStartButton">Get Started</button>
             </div>
         </div>
         <div class="main">
-            <h1>Reimagine your meetings with AI insights</h1>
+            <h1>Reimagine your meetings with <span class="svgRecolor2"> AI insights <img class="svgRecolor2" src="./sparkles.svg" alt="sparkles"></span></h1>
             <p>Enhance decision-making, improve collaboration, and drive your business forward with the power of AI-driven meeting intelligence.</p>
             <div class="meetingSelection">
                 <div class="top">
-                    <button class="meetingType selected">Online meeting</button>
-                    <button class="meetingType">In-person meeting</button>
-                    <button class="meetingType">Upload meeting</button>
+                    <button class="meetingType selected"><img class="svgRecolor" src="./video-camera-alt.svg" alt="camera icon">Online meeting</button>
+                    <button class="meetingType"><img class="svgRecolor" src="./meeting.svg" alt="meeting icon">In-person meeting</button>
+                    <div class="break">|</div>
+                    <button class="meetingType"><img class="svgRecolor" src="./upload.svg" alt="upload icon">Upload meeting</button>
                 </div>
                 <div class="bottom">
-                    <input type="text" placeholder="Paste your meeting URL here">
+                    <span class="urlInput">
+                        <input class="urlInput" type="text" placeholder="Paste your meeting URL here">
+                        <img class="urlInput" src="./googleMeet.png" alt="google meet icon">
+                        <img class="urlInput" src="./zoom.png" alt="zoom icon">
+                        <img class="urlInput" src="./microsoftTeams.png" alt="microsoft teams logo">
+                    </span>
                     <button id="startCaptureButton">Start capturing</button>
                 </div>
             </div>
@@ -59,11 +65,26 @@
             Trusted by 2,000 ambitious teams
         </div>
         <div class="bottom">
-            <h2 class="brandName">Boltshift</h2>
-            <h2 class="brandName">Constellation</h2>
-            <h2 class="brandName">Spherule</h2>
-            <h2 class="brandName">Wildcrafted</h2>
-            <h2 class="brandName">Peregrin</h2>
+            <div class="alignIcon">
+                <img class="svgRecolor" src="./sparkles.svg" alt="">
+                <h2 class="brandName">Brand Name</h2>
+            </div>
+            <div class="alignIcon">
+                <img class="svgRecolor" src="./sparkles.svg" alt="">
+                <h2 class="brandName">Brand Name</h2>
+            </div>
+            <div class="alignIcon">
+                <img class="svgRecolor" src="./sparkles.svg" alt="">
+                <h2 class="brandName">Brand Name</h2>
+            </div>
+            <div class="alignIcon">
+                <img class="svgRecolor" src="./sparkles.svg" alt="">
+                <h2 class="brandName">Brand Name</h2>
+            </div>
+            <div class="alignIcon">
+                <img class="svgRecolor" src="./sparkles.svg" alt="">
+                <h2 class="brandName">Brand Name</h2>
+            </div>
         </div>
     </section>
     <section class="howItWorks main">

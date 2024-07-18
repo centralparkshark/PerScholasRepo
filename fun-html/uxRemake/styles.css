@@ -7,42 +7,90 @@ html, body {
    display: flex;
    flex-direction: column;
    font-family: sans-serif;
-   letter-spacing: 1px;
+   letter-spacing: .1vw;
    font-weight: 100;
+   font-size: 1rem;
 }
 
-#fullHeader {
-    padding: 10px;
+::selection {
+    background-color: #6751a9;
+    color: white;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
     align-items: center;
-    gap: 10px;
+    padding: 1.4vh 1.4vw;
+    gap: 10vw;
 }
 
 #logo {
     opacity: .95;
 }
-
-.centerMenu {
-    width: 40%;
-}
-
-.menu {
+.leftNavBar, .rightNavBar {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.dropDown {
+.leftNavBar {
+    padding-right: 4vw;
+}
+
+.rightNavBar {
+    padding-left: 1vw;
+}
+
+.centerNavBar {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.navBarItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 8px;
+}
+
+.navBarItem:hover {
+    opacity: 80%;
+    filter: brightness(0) saturate(100%) invert(92%) sepia(95%) saturate(3912%) hue-rotate(216deg) brightness(96%) contrast(93%);
+}
+
+.navBarItem img {
     height: 1rem;
     padding-left: 8px;
 }
 
 .main {
-    width: 50vw;
-    margin: auto;
+    justify-content: center;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+}
+
+.main h1 {
+    font-size: 3.2vw;
+    width: 44vw;
+    margin: 0;
+    margin-top: 8vh;
+    margin-bottom: 4vh;
+}
+
+.main p {
+    width: 30vw;
+    margin: 0;
+    font-size: 1vw;
+    line-height: 1.6rem;
 }
 
 button {
@@ -51,7 +99,7 @@ button {
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
-    height: fit-content;
+    height: 3.2rem;
     cursor: pointer;
     outline: inherit;
     letter-spacing: inherit;
@@ -59,16 +107,63 @@ button {
 
 #getStartButton {
     background-color: white;
-    color: black;
+    color: rgb(81,54,156);
+    font-weight: 700;
+}
+
+.meetingSelection {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.meetingType {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .selected {
     background-color: #6751a9;
 }
 
+.meetingSelection .bottom {
+    display: flex;
+    justify-content: flex-start;
+}
+
 #startCaptureButton {
     background-color: #7f56d9;
     color: white;
+}
+
+span.urlInput {
+    border: none;
+    padding-right: 10px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+span.urlInput:focus-within {
+    outline: 5px auto #7f56d9;
+}
+
+input.urlInput {
+    border: none;
+    border-radius: 10px;
+    height: calc(3.2rem - 20px);
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+}
+
+img.urlInput {
+    height: 18px;
 }
 
 #tiles {
@@ -77,19 +172,47 @@ button {
 }
 
 .webTop {
-    background-color: rgba(81,54,156,255);
+    background-color: rgb(81,54,156);
+    padding-top: 10px;
 }
 
 .top, .bottom {
     display: flex;
     justify-content: center;
-    gap: 1vw;
+    align-items: baseline;
     margin: 10px;
+    gap: 10px;
+}
+
+.break {
+    color: #6751a9;
+    font-weight: 800;
 }
 
 .sponsor {
     background-color: rgba(66,48,125,255);
-    padding: 2vh;
+    padding: 8vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.sponsor * {
+    margin: 0;
+}
+
+.sponsor .top {
+    color: rgb(199, 199, 199);
+}
+
+.sponsor .bottom {
+    display: flex;
+    gap: 24px;
+}
+
+.alignIcon {
+    display: flex;
+    gap: 4px;
 }
 
 .howItWorks {
@@ -130,3 +253,21 @@ button {
     display: inline-block;
 
 }
+
+.svgRecolor {
+    width: 1rem;
+    filter: invert(100%);
+}
+
+.svgRecolor2 {
+    background: linear-gradient(45deg, rgba(226,203,152,1) 0%, rgba(249,104,253,1) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.svgRecolor2 img {
+    width: 2.4vw;
+    filter: brightness(0) saturate(100%) invert(51%) sepia(91%) saturate(809%) hue-rotate(268deg) brightness(103%) contrast(98%);
+}
+
