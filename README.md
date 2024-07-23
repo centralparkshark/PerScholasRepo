@@ -51,6 +51,7 @@ Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom](https://applica
 - [HTML Section Heading Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)
 - [Basic Terms (Google Doc)](https://docs.google.com/document/d/1fTg7ikjvRKT73zVVS4wSngtgJVAwqZ0tBVWFOmHk_W8/edit?usp=sharing)
 - [Emmet Syntax](https://docs.emmet.io/abbreviations/syntax/)
+- [Emmet Cheatsheet](https://docs.emmet.io/cheat-sheet/)
 - [Using Tables, ColSpan](https://www.w3schools.com/tags/att_td_colspan.asp)
 
 ## CSS
@@ -64,3 +65,13 @@ Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom](https://applica
 - [Color Picker](https://www.w3schools.com/colors/colors_picker.asp)
 - [Coolors](https://coolors.co/)
 - [Color Palettes](https://colorhunt.co/)
+### Flexbox
+- [Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/)
+- [Flexbox Froggy Game](https://flexboxfroggy.com/)
+- [Flexbox Zombies Game](https://flexboxzombies.com/p/flexbox-zombies)
+### CSS Grid
+- [Interactive Guide to CSS Grid](https://www.joshwcomeau.com/css/interactive-guide-to-grid/)
+- [CSS Grid Garden Game](https://cssgridgarden.com/)
+### Other
+- [PX to REM Converter](https://nekocalc.com/px-to-rem-converter)
