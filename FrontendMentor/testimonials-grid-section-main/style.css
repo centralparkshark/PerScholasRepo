@@ -9,13 +9,23 @@
     2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity */
 }
 
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-color: var(--LightGrayishBlue);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh;
+    
+}
+
+main {
+    padding: 0;
+    margin: auto 0;
 }
 
 * {
@@ -24,10 +34,6 @@ body {
     font-weight: 500;
     /* Weights: 500, 600 */
     line-height: 150%;
-}
-
-main {
-    padding: 5.4rem 1.6rem;
 }
 
 .cards {
