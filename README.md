@@ -70,8 +70,11 @@ Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom](https://applica
 - [Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/)
 - [Flexbox Froggy Game](https://flexboxfroggy.com/)
 - [Flexbox Zombies Game](https://flexboxzombies.com/p/flexbox-zombies)
+- [Flexbox Axes](https://www.samanthaming.com/flexbox30/4-flexbox-axes/)
 ### CSS Grid
 - [Interactive Guide to CSS Grid](https://www.joshwcomeau.com/css/interactive-guide-to-grid/)
 - [CSS Grid Garden Game](https://cssgridgarden.com/)
 ### Other
 - [PX to REM Converter](https://nekocalc.com/px-to-rem-converter)
+- [Study Guide](https://docs.google.com/document/d/1SVKScKec_tjp-ucurn8t5VICk9ZWkp282xr-xDZB2ew/edit?usp=sharing)
+- [Bootstrap](https://getbootstrap.com/)
