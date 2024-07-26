@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take What You Need</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        nav::after, nav::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-image: conic-gradient(var(--sage), var(--lightBlue), var(--blue), var(--apricot), var(--sage));
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            z-index: -1;
+            padding: 3px;
+            border-radius: 2rem;
+        }
+        nav::before {
+            filter: blur(1.5rem);
+            opacity: 0.5;
+        }
+        li {
+            padding: .5rem;
+        }
+        body::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: conic-gradient(var(--sage), var(--lightBlue), var(--blue), var(--apricot), var(--sage));
+        filter: blur(1.5rem);
+        z-index: -2;
+        }
+        .wrapper {
+            scale: 200%;
+        }
+        nav {
+            top: 10vh;
+        }
+        @media (max-width: 630px) {
+            .wrapper {
+                scale: 100%;
+            }
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logo">
+        <a class="title" href="#">Take What You Need</a>
+
+        <input type="checkbox" id="toggle">
+        <label for="toggle"><img class="toggleIcon close" src="./imgs/close.svg" alt="x"><img class="toggleIcon open" src="./imgs/menu.svg" alt="hamburger menu"></label>
+        
+
+        <div class="contact">
+            <div class="headerLinks"><a href="#">Resources</a></div>
+            <div class="headerLinks"><img class="svg" src="./imgs/logo-instagram.svg" alt="instgram"></div>
+            <div class="headerLinks"><img class="svg" src="./imgs/mail-outline.svg" alt="email"></div>
+        </div>
+    </div>
+    
+    <div class="home">
+        <div class="homeText">Click what you need right now</div>
+        <img src="./imgs/arrow-down-outline.svg" alt="down arrow">
+    <div class="wrapper">
+        <nav style="position: relative;">
+            <ul>
+                <li class="item"><a href="calm.html">
+                    <span class="icon"><img src="./imgs/leaf.svg" alt="leaf"></span>
+                    <span class="text">Calm</span>
+                </a></li>
+                <li class="item"><a href="gratitude.html">
+                    <span class="icon"><img src="./imgs/heart.svg" alt="heart"></span>
+                    <span class="text">Gratitude</span>
+                </a></li>
+                <li class="item"><a href="motivation.html">
+                    <span class="icon"><img src="./imgs/body.svg" alt="body"></span>
+                    <span class="text">Motivation</span>
+                </a></li>
+            </ul>
+        </nav>
+    </div>
+
+    
+        
+
+
+
+</body>
+</html>

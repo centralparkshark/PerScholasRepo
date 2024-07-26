@@ -1,0 +1,289 @@
+:root {
+    --blue: #567B81;
+    --lightBlue: #B2D9E0;
+    --lightOrange: #FBDBBF;
+    --apricot: #F9B97F;
+    --darkBlue: #12263A;
+    --sage: #A7BA93;
+    --white: #f6efe0;
+}
+
+::selection {
+    background-color: var(--sage);
+    color: var(--white);
+}
+
+html { 
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: fadeIn 2s;
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAV BAR */
+
+.logo {
+    background-color: var(--darkBlue);
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.logo .title {
+    color: var(--apricot);
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.logo .title:hover {
+    scale: 1.1;
+}
+
+input + label {
+    display: none;
+}
+#toggle {
+    display: none;
+}
+.toggleIcon {
+    width: 2rem;
+    filter: brightness(0) saturate(100%) invert(90%) sepia(11%) saturate(305%) hue-rotate(347deg) brightness(107%) contrast(93%);
+    position: absolute;
+    right: 10px;
+    top: 1.2rem;
+}
+.toggleIcon.close {
+    display: none;
+}
+#toggle:checked ~ .contact {
+    display: block;
+}
+#toggle:checked + label .toggleIcon.close {
+    display: block;
+}
+#toggle:checked + label .toggleIcon.open  {
+    display: none;
+}
+.contact {
+    font-size: 1.4rem;
+    color: var(--lightBlue);
+    display: flex;
+    gap: 10px;
+    align-items:center;
+}
+.contact>div:first-child{
+    padding-right: 2rem;;
+}
+.contact .svg {
+    filter: brightness(0) saturate(100%) invert(89%) sepia(26%) saturate(279%) hue-rotate(148deg) brightness(90%) contrast(95%);
+    height: 2rem;
+}
+.contact a {
+    color: var(--lightBlue);
+}
+.contact .svg:hover, .contact a:hover {
+    opacity: 80%;
+    scale: 90%;
+}
+
+
+nav {
+    background-color: var(--darkBlue);
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    /* position: relative; */
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 2rem;
+    box-shadow: 6px 3px 10px #12263a5b;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: .5rem;;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+li {
+    padding: .1rem;
+    border-radius: 2rem;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li:not(.selected):hover {
+    transform: translateY(-10px);
+}
+
+li:not(.selected):hover * {
+    color: var(--sage);
+    filter: brightness(0) saturate(100%) invert(89%) sepia(3%) saturate(2885%) hue-rotate(45deg) brightness(84%) contrast(81%);
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    align-content: center;
+    gap: .4rem;
+    font-size: calc(15px + 0.390625vw);
+}
+
+.icon {
+    position: relative;
+    top: 2px;
+}
+
+.icon img {
+    height: calc(15px + 0.390625vw);
+    filter: brightness(0) saturate(100%) invert(90%) sepia(11%) saturate(305%) hue-rotate(347deg) brightness(107%) contrast(93%);
+}
+
+.selected {
+    background-color: var(--lightBlue);
+    padding: .5rem;
+}
+
+.selected * {
+    filter: brightness(0) saturate(100%) invert(11%) sepia(12%) saturate(3464%) hue-rotate(171deg) brightness(94%) contrast(92%);
+    color: var(--darkBlue);
+    font-weight: 700;
+}
+
+
+/* home page  */
+
+.home {
+    /* border: 3px solid blue; */
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.home img {
+    filter: brightness(0) saturate(100%) invert(11%) sepia(11%) saturate(3864%) hue-rotate(172deg) brightness(95%) contrast(92%);
+    height: 10%;
+    
+    animation: scroll 2s infinite;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+}
+
+/* main pages  */
+
+.exercisePage {
+    height: 100vh;
+    border: 3px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.exercisePage img {
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 475px) {
+    /* navbar */
+    .icon img {
+        display: none;
+    }
+    a {
+        font-size: calc(10px + 0.390625vw);
+    }
+    .contact {
+        display: none;
+        margin-top: 4rem;
+        background-color: var(--blue);
+        padding: 1rem;
+        text-align: right;
+    }
+    .toggle {
+        display: block;
+    }
+    .logo {
+        text-align: left;
+    }
+    .logo .text {
+        max-width: 70%;
+    }
+    input + label {
+        display: block;
+    }
+}
+
