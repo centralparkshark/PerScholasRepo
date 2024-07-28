@@ -51,25 +51,22 @@
     <main>
         <div class="exercisePage" id="page1">
             <div class="card">
-                <div class="left">
+                <div class="left" style="width: 100%;">
                     <div class="title">Gratitude Prompts</div>
                     <div class="information">
-                        <form action="">
+                        <form action="" style="width: 100%;">
                             <label for="prompt1">Name a food you are grateful for:</label>
-                            <input type="text" name="prompt1" id="prompt1">
+                            <textarea name="prompt1" id="prompt1"></textarea>
 
-                            <label for="prompt2">2.</label>
-                            <input type="text" name="prompt2" id="prompt2">
+                            <label for="prompt2">Think of someone who has positively impacted your life:</label>
+                            <textarea name="prompt2" id="prompt2"></textarea>
 
-                            <label for="prompt3">3.</label>
-                            <input type="text" name="prompt3" id="prompt3">
+                            <label for="prompt3">What made you smile today?</label>
+                            <textarea name="prompt3" id="prompt3"></textarea>
 
-                            <button>Submit</button>
+                            <button class="submit" type="submit" href="/">Submit</button>
                         </form>
                     </div>
-                </div>
-                <div class="right">
-                    <img src="./imgs/equalBreathing.gif" alt="gif directing breathing in and out">
                 </div>
                 <a href="#page2" class="nextButton">Next Exercise</a>
             </div>
@@ -77,6 +74,7 @@
                 <a href="#"><img class="upArrow" src="./imgs/downArrow.svg" alt="arrow up"></a>
                 <div class="circleNav">
                     <div class="circle selected"></div>
+                    <div class="circle"></div>
                     <div class="circle"></div>
                 </div>
                 <a href="#page2"><img class="downArrow" src="./imgs/downArrow.svg" alt="arrow down"></a>
@@ -90,13 +88,46 @@
                     <div class="information">Look around the space you currently occupy and think of anything and everything you could appreciate, from the ground  your feet rest on to the air you breathe. Even the little things deserve a little love.</div>
                 </div>
                 <div class="right">
-                    <img src="./imgs/equalBreathing.gif" alt="gif directing breathing in and out">
+                    <img src="./imgs/pexels-cottonbro-3171465.jpg" alt="gif directing breathing in and out">
                 </div>
-                <a href="#page2" class="nextButton">Back to Top</a>
+                <a href="#page3" class="nextButton">Next Exercise</a>
             </div>
             <div class="arrows">
                 <a href="#"><img class="upArrow" src="./imgs/downArrow.svg" alt="arrow up"></a>
                 <div class="circleNav">
+                    <div class="circle"></div>
+                    <div class="circle selected"></div>
+                    <div class="circle"></div>
+                </div>
+                <a href="#page3"><img class="downArrow" src="./imgs/downArrow.svg" alt="arrow down"></a>
+            </div>
+        </div>
+
+        <div class="exercisePage" id="page3">
+            <div class="card">
+                <div class="left" style="width: 80%;">
+                    <div class="title">If you're having trouble thinking of some, pick what you need.</div>
+                    <select class="dropdown" name="affirmation" id="affirmation" style="width: 100%;">
+                        <option value="">I am thankful for the gift of life.</option>
+                        <option value="">I am thankful for my health.</option>
+                        <option value="">I am thankful for peace.</option>
+                        <option value="">I am thankful for laughter.</option>
+                        <option value="">I am thankful for my family and friends.</option>
+                        <option value="">I am thankful for shelter.</option>
+                        <option value="">I am thankful for having food to eat.</option>
+                        <option value="">I am thankful for the highs and lows.</option>
+                        <option value="">I am thankful for music.</option>
+                        <option value="">I am thankful for the ability to restart.</option>
+                        <option value="">I am thankful for the lessons learned.</option>
+                    </select>
+                    <div>Read the one you chose out loud to place it in your working memory.</div>
+                </div>
+                <a href="#" class="nextButton">Back to Top</a>
+            </div>
+            <div class="arrows">
+                <a href="#page2"><img class="upArrow" src="./imgs/downArrow.svg" alt="arrow up"></a>
+                <div class="circleNav">
+                    <div class="circle"></div>
                     <div class="circle"></div>
                     <div class="circle selected"></div>
                 </div>

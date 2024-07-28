@@ -11,11 +11,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 
-    <!-- <style>
-        body {
-            background-color: blue;
+    <style>
+        table {
+            background-color: var(--white);
+            padding: 0;
         }
-    </style> -->
+        tr:nth-child(even) {
+            background-color: var(--lightBlue);
+        }
+        tr:nth-child(odd) {
+            background-color: var(--white);
+        }
+        table * {
+            color: var(--darkBlue);
+        }
+    </style>
 </head>
 <body>
     <div class="sidebar">
@@ -50,16 +60,51 @@
     </div>
 
     <main>
-        <div class="exercisePage" id="page1">
-            <div class="card">
-                <div class="left">
-                    <div class="title">Gratitude Prompts</div>
-                    <div class="information">
-                        dsfsdfsdf
+        <div class="exercisePage" id="page1" style="margin-top: 100px;";>
+            <div class="card" style="height: fit-content;">
+                <div class="left" style="width: 100%; display: flex; flex-direction: column;">
+                    <div class="title">Basic Psychologyical Need Satisfaction</div>
+                    <p>According to the self-determination theory, basic needs for competence and autonomy must be met to function optimally (Deci & Ryan, 2000).</p>
+                    <div style="display: flex; justify-content: space-around; font-size: 16px;">
+                        <div>1 - Not true at all</div>
+                        <div>4 - Somewhat true</div>
+                        <div>7 -Very true</div>
                     </div>
-                </div>
-                <div class="right">
-                    <img src="./imgs/equalBreathing.gif" alt="gif directing breathing in and out">
+
+                    <table style="font-size: 16px; margin: 2rem 0; align-self: center;">
+                        <th>Statement</th>
+                        <th>Response</th>
+                        <tr>
+                            <td>1. I feel like I am free to decide for myself how to live my life.</td>
+                            <td>
+                                <input type="range" name="q1" id="q1" list="markers" min="1" max="7">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2. I really like the people I interact with.</td>
+                            <td>
+                                <input type="range" name="q2" id="q2" list="markers" min="1" max="7">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3. Often, I do not feel very competent.</td>
+                            <td>
+                                <input type="range" name="q3" id="q3" list="markers" min="1" max="7">
+                            </td>
+                        </tr>
+            
+                        
+                        <datalist id="markers">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                            <option value="6"></option>
+                            <option value="7"></option>
+                        </datalist>
+                    </table>
+                    <div style="padding: 1rem;">More questions to be added...</div>
                 </div>
                 <a href="#page2" class="nextButton">Next Exercise</a>
             </div>
@@ -82,7 +127,7 @@
                     <div class="information">Look around the space you currently occupy and think of anything and everything you could appreciate, from the ground  your feet rest on to the air you breathe. Even the little things deserve a little love.</div>
                 </div>
                 <div class="right">
-                    <img src="./imgs/equalBreathing.gif" alt="gif directing breathing in and out">
+                    <img src="./imgs/pexels-cottonbro-3831849.jpg" alt="mirror with motivational post its">
                 </div>
                 <a href="#page3" class="nextButton">Next Exercise</a>
             </div>
@@ -105,7 +150,7 @@
                     <div class="information">Look around the space you currently occupy and think of anything and everything you could appreciate, from the ground  your feet rest on to the air you breathe. Even the little things deserve a little love.</div>
                 </div>
                 <div class="right">
-                    <img src="./imgs/equalBreathing.gif" alt="gif directing breathing in and out">
+                    <img src="./imgs/pexels-mdsnmdsnmdsn-2821823.jpg" alt="sign reading self care isn't selfish">
                 </div>
                 <a href="#page4" class="nextButton">Next Exercise</a>
             </div>

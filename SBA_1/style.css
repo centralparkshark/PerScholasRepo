@@ -8,6 +8,7 @@
     /* COLOR FILTERS  */
     --filterWhite: brightness(0) saturate(100%) invert(90%) sepia(11%) saturate(305%) hue-rotate(347deg) brightness(107%) contrast(93%);
     --filterSage: brightness(0) saturate(100%) invert(70%) sepia(17%) saturate(410%) hue-rotate(47deg) brightness(99%) contrast(92%);
+    --filterDarkBlue: brightness(0) saturate(100%) invert(10%) sepia(76%) saturate(599%) hue-rotate(170deg) brightness(93%) contrast(92%);
 }
 
 ::selection {
@@ -124,8 +125,18 @@ li {
     padding: .5rem;
 }
 
+li:hover :not(.selected){
+    filter: var(--filterSage);
+}
+
+
 .selected {
-    background-color: purple;
+    background-color: var(--lightBlue);
+}
+
+.selected * {
+    color: var(--darkBlue);
+    filter: var(--filterDarkBlue);
 }
 
 .contact {
@@ -172,7 +183,7 @@ main {
 }
 
 .header {
-    font-size: calc(80px + 0.390625vw);
+    font-size: calc(60px + 0.390625vw);
     color: var(--white);
     font-weight: 500;
     max-width: 55%;
@@ -198,7 +209,7 @@ span.gradient:hover {
     filter: var(--filterWhite);
 }
 
-@media (min-width: 650px) {
+@media (min-width: 800px) {
     body {
         flex-direction: row;
     }
@@ -232,7 +243,7 @@ span.gradient:hover {
         border-radius: 0;
     }
     .arrowRight {
-        rotate: 100deg;
+        rotate: 90deg;
     }
     main {
         padding-left: 350px;
@@ -254,7 +265,7 @@ span.gradient:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     border-radius: 12px;
     padding: .5rem;
     padding-bottom: 1.4rem;
@@ -271,17 +282,35 @@ span.gradient:hover {
     
 }
 
-.card .right {
+.card .right, .card .left {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
 }
 
 .card .information {
     font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .right {
+    max-width: 55%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    border-radius: 12px;
 }
 
 .card img {
-    max-width: 75%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+
 }
 
 .arrows {
@@ -353,4 +382,72 @@ span.gradient:hover {
 form {
     display: flex;
     flex-direction: column;
+    max-width: 80%;
+}
+
+input, textarea, select, option {
+    color: var(--darkBlue);
+    font-size: .8rem;
+    margin: 10px 0;
+}
+
+select {
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: var(--sage) 3px solid;
+    max-width: 100%;
+}
+
+.submit {
+    color: var(--lightBlue);
+    background-color: var(--blue);
+    width: fit-content;
+    padding: .5rem 2rem;
+    border: none;
+    border-radius: 30px;
+    align-self: flex-end;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+table {
+    max-width: 100%;
+}
+
+.arrowRight {
+    position: absolute;
+    bottom: 50%;
+    animation: fade-move 1s infinite;
+}
+
+@keyframes fade-move {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+}
+
+button:hover {
+    background-color: var(--lightBlue);
+    color: var(--darkBlue);
+    animation: bounce 0.3s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
