@@ -12,44 +12,116 @@
 
 
     <style>
-        /* need something here */
+
     </style>
     
 </head>
 
 <body>
-    <div class="logo">
-        <a href="index.html">Take What You Need</a>
-    </div>
-    Calm
-    <nav>
-        <ul>
-            <li class="selected"><a href="#">
-                <span class="icon"><img src="./imgs/leaf.svg" alt="leaf"></span>
-                <span class="text">Calm</span>
-            </a></li>
-            <li class=""><a href="gratitude.html">
-                <span class="icon"><img src="./imgs/heart.svg" alt="heart"></span>
-                <span class="text">Gratitude</span>
-            </a></li>
-            <li class=""><a href="motivation.html">
-                <span class="icon"><img src="./imgs/body.svg" alt="body"></span>
-                <span class="text">Motivation</span>
-            </a></li>
-        </ul>
-    </nav>
+    <div class="sidebar">
+        <div class="top">
+            <div class="title"><a href="index.html">Take What You Need</a></div>
+            <nav>
+                <ul>
+                    <li class="item selected"><a href="calm.html">
+                        <img src="./imgs/leaf.svg" alt="leaf">
+                        <span class="text">Calm</span>
+                    </a></li>
+                    <li class="item"><a href="gratitude.html">
+                        <img src="./imgs/heart.svg" alt="heart">
+                        <span class="text">Gratitude</span>
+                    </a></li>
+                    <li class="item"><a href="motivation.html">
+                        <img src="./imgs/body.svg" alt="body">
+                        <span class="text">Motivation</span>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
 
-    <div class="calmMain">
-        <div class="exercisePage" id="page1">
-            <a href="#page2">Next Exercise</a>
-            <div>Equal Breathing</div>
-            <img src="./imgs/equalBreathing.gif" alt="gif directing inhale and exhale">
-        </div>
-        <div class="exercisePage" id="page2">
-            <div>Square Breathing</div>
-            <img src="./imgs/squareBreathing.gif" alt="gif directing inhale, hold, exhale, hold">
+        <div class="contact">
+            <div class="headerLinks"><a href="./resources.html">Other Resources</a></div>
+            <div class="socialLinks">
+                <div class="headerLinks"><img src="./imgs/insta.svg" alt="instagram"></div>
+                <div class="headerLinks"><img src="./imgs/mail-outline.svg" alt="email"></div>
+                <div class="headerLinks"><img src="./imgs/code-slash.svg" alt="code slash"></div>
+            </div>
         </div>
     </div>
+
+    <main>
+        <div class="exercisePage" id="page1">
+            <div class="card">
+                <div class="left">
+                    <div class="title">Test</div>
+                    <div class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat id delectus quibusdam ut odio aperiam voluptatum sed praesentium inventore exercitationem dignissimos ex a doloribus, officia, deserunt accusantium fuga reprehenderit. Repudiandae.</div>
+                </div>
+                <div class="right">
+                    <img src="./imgs/equalBreathing.gif" alt="gif directing breathing in and out">
+                </div>
+                <a href="#page2" class="nextButton">Next Exercise</a>
+            </div>
+            <div class="arrows">
+                <a href="#"><img class="upArrow" src="./imgs/downArrow.svg" alt="arrow up"></a>
+                <div class="circleNav">
+                    <div class="circle selected"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                <a href="#page2"><img class="downArrow" src="./imgs/downArrow.svg" alt="arrow down"></a>
+            </div>
+        </div>
+
+        <div class="exercisePage" id="page2">
+            <div class="card">
+                <div class="left">
+                    <div class="title">Test</div>
+                    <div class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat id delectus quibusdam ut odio aperiam voluptatum sed praesentium inventore exercitationem dignissimos ex a doloribus, officia, deserunt accusantium fuga reprehenderit. Repudiandae.</div>
+                </div>
+                <div class="right">
+                    <img src="./imgs/squareBreathing.gif" alt="gif directing inhale, hold, exhale, hold">
+                </div>
+                <a href="#page3" class="nextButton">Next Exercise</a>
+            </div>
+            <div class="arrows">
+                <a href="#page1"><img class="upArrow" src="./imgs/downArrow.svg" alt="arrow up"></a>
+                <div class="circleNav">
+                    <div class="circle"></div>
+                    <div class="circle selected"></div>
+                    <div class="circle"></div>
+                </div>
+                <a href="#page3"><img class="downArrow" src="./imgs/downArrow.svg" alt="arrow down"></a>
+            </div>
+        </div>
+
+        <div class="exercisePage" id="page3">
+            <div class="card">
+                <div class="left" style="width: 80%;;">
+                    <div class="title">Muscle Relaxation</div>
+                    <div class="information">
+                        <ol>
+                            <li>Use your hand to make a tight fist.</li>
+                            <li>Hold it for a few seconds, noticing the tension in your muscles.</li>
+                            <li>Slowly open your hand, noticing how it feels.</li>
+                            <li>Repeat this in different parts of your body, feeling the release of tension.</li>
+                        </ol>
+                    </div>
+                </div>
+                <a href="#page1" class="nextButton">Back to Top</a>
+            </div>
+            <div class="arrows">
+                <a href="#page2"><img class="upArrow" src="./imgs/downArrow.svg" alt="arrow up"></a>
+                <div class="circleNav">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle selected"></div>
+                </div>
+                <a href="#"><img class="downArrow" src="./imgs/downArrow.svg" alt="arrow down"></a>
+            </div>
+        </div>
+        
+    </main>
+
     
  
         
