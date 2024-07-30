@@ -8,6 +8,7 @@ Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom](https://applica
 ### Youtube Channels
 - [The Coding Classroom](https://www.youtube.com/@TheCodingClassroom-rk/playlists)
 - [HuXn WebDev](https://www.youtube.com/@huxnwebdev/playlists)
+- [Think Like a Programmer (YouTube)](https://www.youtube.com/watch?v=azcrPFhaY9k&start=6)
 ### Online Courses
 - [Free Coursera for NY Residents](https://dol.ny.gov/online-learning-coursera)
 - [Udemy Course - Web Development](https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=THANKSLEARNER24) - costs $16
@@ -84,3 +85,7 @@ Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom](https://applica
 ## JavaScript
 - [JS Data Types](https://www.programiz.com/javascript/data-types)
 - [JS Tutorial - Intro and Setup](https://www.youtube.com/watch?v=iWOYAxlnaww)
+
+### JS Tools/Extensions
+- [Replit](https://replit.com/~)
+- [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
