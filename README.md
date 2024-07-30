@@ -40,6 +40,7 @@ Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom](https://applica
 - [Git Basics](https://www.theodinproject.com/lessons/foundations-git-basics#new-github-repo)
 - [GitHub for Beginners](https://youtu.be/3RjQznt-8kE?si=77pU2zVFPRM2bZPM)
 - [Git Cheat Sheet (PDF)](https://training.github.com/downloads/github-git-cheat-sheet.pdf)
+- [Uploading to GitHub](https://www.youtube.com/watch?v=qMck70tLDuo)
 
 ## HTML
 - [HTML Cheat Sheet](https://htmlcheatsheet.com/)
@@ -65,6 +66,7 @@ Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom](https://applica
 - [Color Picker](https://www.w3schools.com/colors/colors_picker.asp)
 - [Coolors](https://coolors.co/)
 - [Color Palettes](https://colorhunt.co/)
+- [CSS Color Filter](https://angel-rs.github.io/css-color-filter-generator/) add to svgs to change their color
 ### Flexbox
 - [Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/)
@@ -78,3 +80,7 @@ Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom](https://applica
 - [PX to REM Converter](https://nekocalc.com/px-to-rem-converter)
 - [Study Guide](https://docs.google.com/document/d/1SVKScKec_tjp-ucurn8t5VICk9ZWkp282xr-xDZB2ew/edit?usp=sharing)
 - [Bootstrap](https://getbootstrap.com/)
+
+## JavaScript
+- [JS Data Types](https://www.programiz.com/javascript/data-types)
+- [JS Tutorial - Intro and Setup](https://www.youtube.com/watch?v=iWOYAxlnaww)
