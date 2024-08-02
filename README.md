@@ -16,7 +16,10 @@ Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom](https://applica
 ### Documentation
 - [W3 Schools](https://www.w3schools.com/)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/)
-
+### Coding Challenges / Apps
+- [Codewars](https://www.codewars.com/kata/search/javascript?q=&beta=false&order_by=popularity%20desc)
+- [Leetcode]
+- [Hackerrank]
 
 ## Software Development 
 - [Software Testing Terms](https://ray.run/wiki)
@@ -85,6 +88,14 @@ Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom](https://applica
 ## JavaScript
 - [JS Data Types](https://www.programiz.com/javascript/data-types)
 - [JS Tutorial - Intro and Setup](https://www.youtube.com/watch?v=iWOYAxlnaww)
+- [Think Like a Programmer](https://www.youtube.com/watch?v=azcrPFhaY9k&start=6)
+- [Control Flow](https://www.youtube.com/watch?v=JloLGV9DmtQ&start=1052)
+-[The Modern JavaScript Tutorial](https://javascript.info/)
+[Beginner JavaScript Notes](https://wesbos.com/javascript)
+- [For Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+
+### For Loops
+[For Loop w/ Examples](https://www.programiz.com/javascript/for-loop)
 
 ### JS Tools/Extensions
 - [Replit](https://replit.com/~)
