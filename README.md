@@ -96,6 +96,14 @@ Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom](https://applica
 
 ### For Loops
 [For Loop w/ Examples](https://www.programiz.com/javascript/for-loop)
+[For Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+
+### Functions
+[Writing Functions](https://www.youtube.com/watch?v=82ko0XaT4V8)
+[...Rest Parameters](https://www.youtube.com/watch?v=ahwR1D_GAfc)
+
+### Arrays 
+[ForEach()](https://www.youtube.com/shorts/wbNG_Rjksz0)
 
 ### JS Tools/Extensions
 - [Replit](https://replit.com/~)
