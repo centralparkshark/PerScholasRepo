@@ -1,38 +1,7 @@
-// const courseInfo = {
-//     "id": number,
-//     "name": string,
-// }
+// https://perscholas.instructure.com/courses/2204/assignments/414579?wrap=1
 
-// const assignmentGroup = {
-//     "id": number,
-//     "name": string,
-//     // the ID of the course the assignment group belongs to
-//     "course_id": number,
-//     // the percentage weight of the entire assignment group
-//     "group_weight": number,
-//     "assignments": [AssignmentInfo],
-// }
-// // goes in assignment array ^
-// const assignmentInfo = {
-//     "id": number,
-//     "name": string,
-//     // the due date for the assignment
-//     "due_at": Date string,
-//     // the maximum points possible for the assignment
-//     "points_possible": number,
-// }
+// From Code Sandbox
 
-// const learnerSubmission = {
-//     "learner_id": number,
-//     "assignment_id": number,
-//     "submission": {
-//       "submitted_at": Date string,
-//       "score": number
-//     }
-// } 
-
-
-// Everything Below this is from Code sandbox
 // The provided course information.
 const CourseInfo = {
     id: 451,
@@ -111,38 +80,15 @@ const AssignmentGroup = {
     }
   ];
   
-//   function getLearnerData(course, ag, submissions) {
-//     // here, we would process this data to achieve the desired result.
-//     const result = [
-//       {
-//         id: 125,
-//         avg: 0.985, // (47 + 150) / (50 + 150)
-//         1: 0.94, // 47 / 50
-//         2: 1.0 // 150 / 150
-//       },
-//       {
-//         id: 132,
-//         avg: 0.82, // (39 + 125) / (50 + 150)
-//         1: 0.78, // 39 / 50
-//         2: 0.833 // late: (140 - 15) / 150
-//       }
-//     ];
-  
-//     return result;
-//   }
-  
-//   //const result = getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions);
-  
-//   console.log(result);
-  
-
 // below this is my own code
 
 function getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions) {
     try {
         matchIDs(CourseInfo["id"], AssignmentGroup["course_id"]);
-        createStudents(LearnerSubmissions)
-    
+        const students = createStudents(LearnerSubmissions, AssignmentGroup)
+        calcAvg(students)
+        console.log(students)
+        // return students;
     } catch (e) {
         console.error(e);
     }
@@ -157,56 +103,61 @@ function matchIDs(courseID, assignmentGroupID) {
     }
 }
 
-function createStudents(submissionArray) {
+function createStudents(submissionArray, assignments) {
     const students = [];
+
     submissionArray.forEach(submission => {
-        let index = students.findIndex(student => student.id === submission.learner_id)
-        if (index == -1) {
-            students.push({id: submission.learner_id, avg: 0, [submission.assignment_id]: submission.submission.score})
-        } else {  
-            students[index][submission.assignment_id] = submission.submission.score;
+        let index = students.findIndex(student => student.id === submission.learner_id) 
+        let studentScores = checkIfAssignmentValid(submission.assignment_id, submission.submission, assignments)
+        if (studentScores != false) {
+            if (index == -1) {
+                students.push({id: submission.learner_id, avg: [studentScores[0],studentScores[1]], [submission.assignment_id]: studentScores[0]/studentScores[1]})
+            } else {  
+                students[index][submission.assignment_id] = studentScores[0]/studentScores[1];
+                students[index].avg[0] += studentScores[0] 
+                students[index].avg[1] += studentScores[1] 
+            }
         }
     })
-
-    // need to check dates and assignment info here
-    //             studentsInfo['student'].push({[submission.assignment_id]: submission.submission.score})                
-    //             // assignment_id match to assignment to get score out of and due date
-    //             // check due date against submission date
-    //             // submisson.score / points possible
-
-
-    console.log(students)
-    // return students;
+    return students;
     
 }
 
-
-function checkDate() {
-    // if turn in late
-        // deducts 10 percent from score / total
-    // if date hasnt happened yet
-        // dont count in avg
+function checkIfAssignmentValid(assignmentID, submission, assignments) {
+    // need to check dates and assignment info here 
+    let studentScores = []
+    for (let i = 0; i < assignments.assignments.length; i++) {
+        if (assignments.assignments[i].id == assignmentID) {
+            let dueDate = assignments.assignments[i].due_at;
+            let pointsPossible = assignments.assignments[i].points_possible;
+            const date = new Date();
+            const formattedDate = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`
+            // check if late
+            if (dueDate < submission.submitted_at) {
+                return [(submission.score - (.1 * pointsPossible)), pointsPossible];
+            } 
+            // not due yet
+            else if (dueDate > formattedDate) {
+                return false 
+            } else {
+                return [submission.score, pointsPossible]
+            }
+        
+        }
+    }
+    return studentScores
+    
 }
 
+function calcAvg(students) {
+    students.forEach(student => {
+        student.avg = student.avg[0]/student.avg[1]
+    });
+}
 
-// return array of objects (each learner)
-// each object will have their id
-//                       their avg
-//                       individual assignment ids and their grade (percent)
-
-
-// {
-//     // the ID of the learner for which this data has been collected
-//     "id": number,
-//     // the learner’s total, weighted average, in which assignments
-//     // with more points_possible should be counted for more
-//     // e.g. a learner with 50/100 on one assignment and 190/200 on another
-//     // would have a weighted average score of 240/300 = 80%.
-//     "avg": number,
-//     // each assignment should have a key with its ID,
-//     // and the value associated with it should be the percentage that
-//     // the learner scored on the assignment (submission.score / points_possible)
-//     <assignment_id>: number,
-//     // if an assignment is not yet due, it should not be included in either
-//     // the average or the keyed dictionary of scores
-// }
+// TO-DO:
+// - what if points possible is 0
+// - more data validation?
+// - use break or continue 
+// - retrieval, manipulation, removal of items in array
+// - add readMe
