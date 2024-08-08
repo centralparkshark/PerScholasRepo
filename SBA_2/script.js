@@ -79,7 +79,7 @@ const AssignmentGroup = {
       }
     }
   ];
-  
+
 // below this is my own code
 
 function getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions) {
@@ -94,8 +94,6 @@ function getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions) {
     }
 }
 
-getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions)
-
 // checks if course id and assignment group course id match
 function matchIDs(courseID, assignmentGroupID) {
     if (courseID != assignmentGroupID) {
@@ -107,15 +105,18 @@ function createStudents(submissionArray, assignments) {
     const students = [];
 
     submissionArray.forEach(submission => {
-        let index = students.findIndex(student => student.id === submission.learner_id) 
-        let studentScores = checkIfAssignmentValid(submission.assignment_id, submission.submission, assignments)
-        if (studentScores != false) {
-            if (index == -1) {
-                students.push({id: submission.learner_id, avg: [studentScores[0],studentScores[1]], [submission.assignment_id]: studentScores[0]/studentScores[1]})
-            } else {  
-                students[index][submission.assignment_id] = studentScores[0]/studentScores[1];
-                students[index].avg[0] += studentScores[0] 
-                students[index].avg[1] += studentScores[1] 
+        // only runs if there is a submission
+        if (Object.keys(submission.submission).length != 0) {
+            let index = students.findIndex(student => student.id === submission.learner_id) 
+            let studentScores = checkIfAssignmentValid(submission.assignment_id, submission.submission, assignments)
+            if (studentScores) {
+                if (index == -1) {
+                    students.push({id: submission.learner_id, avg: [studentScores[0],studentScores[1]], [submission.assignment_id]: studentScores[0]/studentScores[1]})
+                } else {  
+                    students[index][submission.assignment_id] = studentScores[0]/studentScores[1];
+                    students[index].avg[0] += studentScores[0] 
+                    students[index].avg[1] += studentScores[1] 
+                }
             }
         }
     })
@@ -130,19 +131,20 @@ function checkIfAssignmentValid(assignmentID, submission, assignments) {
         if (assignments.assignments[i].id == assignmentID) {
             let dueDate = assignments.assignments[i].due_at;
             let pointsPossible = assignments.assignments[i].points_possible;
-            const date = new Date();
-            const formattedDate = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`
+            if (!pointsPossible) {
+                throw new Error(`Assignment ${assignmentID} must have a possible score`)
+            }
+            const today = new Date().toISOString().split('T')[0];
             // check if late
             if (dueDate < submission.submitted_at) {
                 return [(submission.score - (.1 * pointsPossible)), pointsPossible];
             } 
             // not due yet
-            else if (dueDate > formattedDate) {
-                return false 
+            else if (dueDate > today) {
+                continue;
             } else {
                 return [submission.score, pointsPossible]
             }
-        
         }
     }
     return studentScores
@@ -155,9 +157,10 @@ function calcAvg(students) {
     });
 }
 
+
+getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions)
+
 // TO-DO:
-// - what if points possible is 0
-// - more data validation?
-// - use break or continue 
 // - retrieval, manipulation, removal of items in array
 // - add readMe
+
