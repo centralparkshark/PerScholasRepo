@@ -20,7 +20,7 @@ topMenuEl.classList.add("flex-around")
 
 menuLinks.forEach(item => {
     let link = document.createElement("a")
-    link.href = `${item.href}`
-    link.textContent = `${item.text}`
+    link.href = item.href
+    link.textContent = item.text
     topMenuEl.appendChild(link)
 }); 
