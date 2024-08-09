@@ -9,7 +9,7 @@ var menuLinks = [
   ];
 
 const mainEl = document.querySelector("main")
-mainEl.style.backgroundColor = `var(--main-bg)`
+mainEl.style.backgroundColor = "var(--main-bg)"
 mainEl.innerHTML = "<h1>DOM Manipulation</h1>"
 mainEl.classList.add("flex-ctr")
 
@@ -18,9 +18,9 @@ topMenuEl.style.height = "100%"
 topMenuEl.style.backgroundColor = "var(--top-menu-bg)"
 topMenuEl.classList.add("flex-around")
 
-for (let i = 0; i < menuLinks.length; i++) {
+menuLinks.forEach(item => {
     let link = document.createElement("a")
-    link.href = `${menuLinks[i].href}`
-    link.textContent = `${menuLinks[i].text}`
+    link.href = `${item.href}`
+    link.textContent = `${item.text}`
     topMenuEl.appendChild(link)
-}
+}); 
