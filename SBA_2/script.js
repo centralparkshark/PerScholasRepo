@@ -87,17 +87,16 @@ function getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions) {
         matchIDs(CourseInfo["id"], AssignmentGroup["course_id"]);
         const students = createStudents(LearnerSubmissions, AssignmentGroup)
         calcAvg(students)
-        console.log(students)
-        // return students;
+        return students;
     } catch (e) {
         console.error(e);
     }
 }
 
 // checks if course id and assignment group course id match
-function matchIDs(courseID, assignmentGroupID) {
-    if (courseID != assignmentGroupID) {
-        throw new Error("Assignment group does not match course.")
+function matchIDs(id1, id2) {
+    if (id1 != id2) {
+        throw new Error("IDs do not match.")
     }
 }
 
@@ -120,13 +119,13 @@ function createStudents(submissionArray, assignments) {
             }
         }
     })
+    
     return students;
     
 }
 
 function checkIfAssignmentValid(assignmentID, submission, assignments) {
     // need to check dates and assignment info here 
-    let studentScores = []
     for (let i = 0; i < assignments.assignments.length; i++) {
         if (assignments.assignments[i].id == assignmentID) {
             let dueDate = assignments.assignments[i].due_at;
@@ -146,9 +145,7 @@ function checkIfAssignmentValid(assignmentID, submission, assignments) {
                 return [submission.score, pointsPossible]
             }
         }
-    }
-    return studentScores
-    
+    }   
 }
 
 function calcAvg(students) {
@@ -158,9 +155,4 @@ function calcAvg(students) {
 }
 
 
-getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions)
-
-// TO-DO:
-// - retrieval, manipulation, removal of items in array
-// - add readMe
-
+console.log(getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions))
