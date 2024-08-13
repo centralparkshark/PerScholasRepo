@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    font-family: sans-serif;
+    color: white;
+}
+
+.holeContainer {
+    display: flex;
+    padding-top: 10%;
+}
+
+.hole {
+    width: 50px;
+    height: 25px;
+    border-radius: 75%;
+    border: rgb(100, 20, 20) 2px solid;
+    background-color: brown;
+    margin: 10px;
+}
+
+img {
+    width: 50px;
+    transform: translateY(-30px);
+}
+
+button {
+    margin-top: 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: darkgreen;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#newGuess {
+    display: none;
+}
