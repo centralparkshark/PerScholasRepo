@@ -23,6 +23,7 @@ Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom](https://applica
 - [Hackerrank]
 ### Job Interview Prep
 - [Pramp](https://www.pramp.com/) 
+- [Technical Interview Questions](https://www.interviewbit.com/technical-interview-questions/)
 ### Other
 - [CodeNewbie](https://www.codenewbie.org/)
 - [Self-Taught Devs Podcast](https://podcasters.spotify.com/pod/show/self-taught-devs)
@@ -52,6 +53,10 @@ Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom](https://applica
 - [GitHub for Beginners](https://youtu.be/3RjQznt-8kE?si=77pU2zVFPRM2bZPM)
 - [Git Cheat Sheet (PDF)](https://training.github.com/downloads/github-git-cheat-sheet.pdf)
 - [Uploading to GitHub](https://www.youtube.com/watch?v=qMck70tLDuo)
+
+### Git Ignore
+- [Git Ignore Templates](https://github.com/github/gitignore/tree/main)
+- [Remove .env](https://algerwrites.medium.com/how-to-remove-env-from-git-commit-history-1d594917b376)
 
 ## HTML
 - [HTML Cheat Sheet](https://htmlcheatsheet.com/)
@@ -129,6 +134,13 @@ Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom](https://applica
 - [Promise Execution](https://lydiahallie.framer.website/blog/promise-execution)
 - [Promises & Async/Await](https://medium.com/@lydiahallie/javascript-visualized-promises-async-await-a3f1aad8a943)
 
+### APIs
+- [Rapid API Hub](https://rapidapi.com/hub)
+- [Free APIs](https://free-apis.github.io/)
+
+### Regex
+- [Regex101](https://regex101.com/)
+
 ## Fullstack! 
 ### MERN
 - [What is the MERN Stack?](https://www.youtube.com/watch?v=98BzS5Oz5E4&list=PL4cUxeGkcC9iJ_KkrkBZWZRHVwnzLIoUE)
@@ -139,6 +151,8 @@ Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom](https://applica
 
 ### MongoDB
 - [Learn Mongo with Node](https://learn.mongodb.com/learning-paths/mongodb-nodejs-developer-path)
+- [MongoDB in 100 seconds](https://www.youtube.com/watch?v=-bt_y4Loofg)
+- [MongoDB Crash Course](https://www.youtube.com/watch?v=ofme2o29ngU)
 
 #### Mongoose
 - [ODM](https://www.dctacademy.com/blog/what-is-object-document-mapper-odm)
