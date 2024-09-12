@@ -13,6 +13,7 @@ Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom](https://applica
 - [Free Coursera for NY Residents](https://dol.ny.gov/online-learning-coursera)
 - [Udemy Course - Web Development](https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=THANKSLEARNER24) - costs $16
 - [Free Udemy w/ Library Card](https://www.gale.com/elearning/udemy) - check your library to see if you have access
+- [Full Stack Course](https://free.appacademy.io/)
 ### Documentation
 - [W3 Schools](https://www.w3schools.com/)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/)
@@ -20,6 +21,12 @@ Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom](https://applica
 - [Codewars](https://www.codewars.com/kata/search/javascript?q=&beta=false&order_by=popularity%20desc)
 - [Leetcode]
 - [Hackerrank]
+### Job Interview Prep
+- [Pramp](https://www.pramp.com/) 
+### Other
+- [CodeNewbie](https://www.codenewbie.org/)
+- [Self-Taught Devs Podcast](https://podcasters.spotify.com/pod/show/self-taught-devs)
+- [Book about JavaScript](https://eloquentjavascript.net/)
 
 ## Software Development 
 - [Software Testing Terms](https://ray.run/wiki)
@@ -90,21 +97,48 @@ Office Hours are Tueday and Thursday - 4:45 - 6:45 EST on [Zoom](https://applica
 - [JS Tutorial - Intro and Setup](https://www.youtube.com/watch?v=iWOYAxlnaww)
 - [Think Like a Programmer](https://www.youtube.com/watch?v=azcrPFhaY9k&start=6)
 - [Control Flow](https://www.youtube.com/watch?v=JloLGV9DmtQ&start=1052)
--[The Modern JavaScript Tutorial](https://javascript.info/)
+- [The Modern JavaScript Tutorial](https://javascript.info/)
 [Beginner JavaScript Notes](https://wesbos.com/javascript)
-- [For Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
-
-### For Loops
-[For Loop w/ Examples](https://www.programiz.com/javascript/for-loop)
-[For Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
-
-### Functions
-[Writing Functions](https://www.youtube.com/watch?v=82ko0XaT4V8)
-[...Rest Parameters](https://www.youtube.com/watch?v=ahwR1D_GAfc)
-
-### Arrays 
-[ForEach()](https://www.youtube.com/shorts/wbNG_Rjksz0)
 
 ### JS Tools/Extensions
 - [Replit](https://replit.com/~)
 - [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
+
+
+### For Loops
+- [For Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+[For Loop w/ Examples](https://www.programiz.com/javascript/for-loop)
+[For Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+
+### Functions
+- [Writing Functions](https://www.youtube.com/watch?v=82ko0XaT4V8)
+- [...Rest Parameters](https://www.youtube.com/watch?v=ahwR1D_GAfc)
+
+### Arrays 
+- [ForEach()](https://www.youtube.com/shorts/wbNG_Rjksz0)
+
+### Document Object Model
+- [DOM Overview](https://www.youtube.com/watch?v=wKBu_dEaF9E)
+- [DOM & BOM Cheat Sheet](https://docs.google.com/document/d/1P2S-g0z1Hbo3WZd2SmntNDI2tfknxfgmwhxKJ_KPv8U/edit?usp=sharing)
+
+### Call Stack / Event Loop
+- [Visual Lesson](https://free.appacademy.io/lessons/recursion/6d71ca38/practices/the-call-stack/ebbc0a89)
+- [Event Loop Video](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+- [Event Loop Visualized](https://www.youtube.com/watch?v=eiC58R16hb8)
+- [Article from above video](https://lydiahallie.framer.website/blog/event-loop)
+- [Promise Execution](https://lydiahallie.framer.website/blog/promise-execution)
+- [Promises & Async/Await](https://medium.com/@lydiahallie/javascript-visualized-promises-async-await-a3f1aad8a943)
+
+## Fullstack! 
+### MERN
+- [What is the MERN Stack?](https://www.youtube.com/watch?v=98BzS5Oz5E4&list=PL4cUxeGkcC9iJ_KkrkBZWZRHVwnzLIoUE)
+- [What is Backend?](https://www.youtube.com/watch?v=XBu54nfzxAQ)
+
+### Express
+- [Express Crash Course](https://www.youtube.com/watch?v=SccSCuHhOw0)
+
+### MongoDB
+- [Learn Mongo with Node](https://learn.mongodb.com/learning-paths/mongodb-nodejs-developer-path)
+
+#### Mongoose
+- [ODM](https://www.dctacademy.com/blog/what-is-object-document-mapper-odm)
